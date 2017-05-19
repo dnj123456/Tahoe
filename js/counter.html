@@ -1,0 +1,70 @@
+var str = "";
+var countlen =7;
+var sCountValue = "22654";
+var showmode=2;
+var counterstyle="12";
+for(var i = 0;sCountValue.length<=countlen;i++)
+{
+sCountValue = "0" + sCountValue;
+}
+if(showmode == 1)
+{
+for(var i=0;i<sCountValue.length;i++)
+{
+str += "<img src='/Comm/tj/images/" + counterstyle + "/" + sCountValue.substr(i,1) + ".gif' border='0' align='absmiddle'>";
+}
+}
+else
+{
+str =sCountValue;
+}
+document.write(str);
+
+//得到的浏览器信息统计代码
+var browser;
+var agent = navigator.userAgent.toLowerCase();
+var regStr_ie = /msie [\d.]+;/gi;
+var regStr_ff = /firefox\/[\d.]+/gi
+var regStr_chrome = /chrome\/[\d.]+/gi;
+var regStr_saf = /safari\/[\d.]+/gi;
+//IE
+if (agent.indexOf("msie") > 0) {
+//browser = agent.match(regStr_ie);
+//var verinfo = (browser + "").replace(/[^0-9.]/ig, "");
+browser = "Internet Explorer";
+}
+//firefox
+else if (agent.indexOf("firefox") > 0) {
+//browser = agent.match(regStr_ff);
+browser = "firefox";
+}
+
+//Chrome
+else if (agent.indexOf("chrome") > 0) {
+//browser = agent.match(regStr_chrome);
+browser = "google chrome";
+
+}
+
+//360
+else if (agent.indexOf("21.0.1180.89") > 0) {
+//browser = agent.match(regStr_chrome);
+browser = "360";
+}
+
+//safari
+else if (agent.indexOf("safari") > 0 && agent.indexOf("chrome") < 0) {
+//browser = agent.match(regStr_saf);
+browser = "safari";
+}
+else {
+browser = "其他";
+}
+
+$.ajax({
+type: "post",
+url: "/Comm/tj/apiTJ.aspx",
+data: { "swidth": window.screen.width, "sheight": window.screen.height, "links": window.location.href, "browser": browser.toString() },
+dataType: "html",
+success: function (result) { }
+})
