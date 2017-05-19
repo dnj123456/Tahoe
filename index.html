@@ -1,1 +1,505 @@
+<!doctype html>
+<html lang="">
+<head>
 
+    <!--
+    -->
+    <meta charset="utf-8" />
+    <title>泰禾集团</title>
+    <meta name="keywords" content="`泰禾集团是一家拥有地产、金融等领域多元发展的大型知名上市公司（股票代码000732）。公司创建于1996年，2010年成功上市，是当年国内唯一上市的地产企业。" />
+    <meta name="description" content="泰禾集团是一家拥有地产、金融等领域多元发展的大型知名上市公司（股票代码000732）。公司创建于1996年，2010年成功上市，是当年国内唯一上市的地产企业。" />
+    <meta name="Content-Type" content="text/html charset=utf-8" />
+    <meta name="viewport" content="width=1280" />
+    <link href="images/logo/logo.png" rel="short icon" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-1.11.1.js"></script>
+    <!--
+    -->
+    <script src="js/myfocus-1.2.3.full.js"></script>
+    <script src="js/countUp.js"></script>
+    <script src="js/CuSunV25CrossDiv.min.js"></script>
+    <script src="js/jquery.kxbdSuperMarquee.js"></script>
+</head>
+<body>
+
+
+<!--top_start-->
+<div class="boxTop">
+    <a href="index.html"><img src="images/top/logo.png" class="logo" /></a>
+    <a href="javascript:void(0)" class="btnSearch"></a>
+    <div class="nav">
+        <ul>
+            <li class="cur"><a href="index.html">首页</a></li>
+            <li><a href="about.html">走进泰禾</a></li>
+            <li><a href="news.html">新闻动态</a></li>
+            <li><a href="thdc.html">泰禾地产</a></li>
+            <li><a href="layout.html">多元布局</a></li>
+            <li><a href="inv.html">投资者关系</a></li>
+            <li><a href="hr.html">人力资源</a></li>
+            <li><a href="contact.html">联络泰禾</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="boxTop1"></div>
+
+<div class="searchTop">
+    <form action="search.html">
+        <input type="text" name="keywords" class="inputTop" />
+        <input type="submit" class="submitTop" value="搜索" />
+    </form>
+</div>
+
+<div class="subNav"></div>
+
+<div class="subNav" style="">
+    <div>
+        <a href="about.html">董事长致辞</a>
+        <a href="about_kggd.html">控股股东</a>
+        <a href="about_jtgk.html">集团概况</a>
+        <a href="about_thzl.html">泰禾之路</a>
+        <a href="about_jtry.html">集团荣誉</a>
+        <a href="about_zrgy.html">责任公益</a>
+    </div>
+</div>
+<div class="subNav">
+    <div>
+        <a href="news.html">集团新闻</a>
+        <a href="news.aspx?ctlgid=564623">项目动态</a>
+        <a href="newsvideo.html">泰禾TV</a>
+    </div>
+</div>
+<div class="subNav">
+    <div>
+        <a href="thdc.html">项目</a>
+        <a href="hotel.html">酒店</a>
+        <a href="service.html">服务</a>
+    </div>
+</div>
+
+<div class="subNav"></div>
+
+<div class="subNav">
+    <div>
+        <a  href="inv.html">股票信息</a>
+        <a  href="inv_list.aspx?ctlgid=348251">临时公告</a>
+        <a  href="inv_list.aspx?ctlgid=686542">定期报告</a>
+        <a  href="inv_list.aspx?ctlgid=422246">公司治理</a>
+        <a  href="inv_ddzl.html">独董监事专栏</a>
+        <a  href="inv_list.aspx?ctlgid=453553">内幕交易防控</a>
+    </div>
+</div>
+<div class="subNav" style="">
+    <div>
+        <a  href="hr.html">人才理念</a>
+        <a  href="hr_xcfl.html">薪酬福利</a>
+        <a  href="hr_jmth.html">加盟泰禾</a>
+        <a  href="hr_rcpy.html">人才培养</a>
+        <a  href="hr_list.aspx?ctlgid=847545">员工活动</a>
+    </div>
+</div>
+
+<div class="subNav"></div>
+<script type="text/javascript">
+    $(function(){
+
+        $('.nav li').mouseenter(function(){
+            liIndex=$(this).index();
+            $('.nav li').removeClass('navBlod');
+            $(this).addClass('navBlod');
+            if(liIndex==0 || liIndex==4 || liIndex==7){
+                $('.subNav').hide();
+            }
+            else{
+                $('.subNav').hide();
+                $('.subNav').eq($(this).index()).slideDown(200);
+            }
+        });
+
+
+        $('.boxMain,.boxMain1,.boxMain2,.subBanner,.boxTop1,.proBanner').mouseenter(function(){
+            $('.subNav').hide();
+            $('.nav li').removeClass('navBlod');
+        });
+
+
+        $('.navR a').css('width',820/$('.navR a').length);
+        $('.navR1 a').css('width',820/$('.navR1 a').length);
+
+        $('.btnSearch').mouseenter(function(){
+            $('.searchTop').slideDown();
+            $('.nav li').removeClass('navBlod');
+        });
+
+        $('.nav,.boxMain,.boxMain1,.boxMain2,.subBanner,.boxTop1,.proBanner').mouseenter(function(){
+            $('.searchTop').hide();
+        });
+
+        $('.searchTop').mouseleave(function(){
+            $(this).hide();
+        });
+
+        $('.inputTop').focus(function(){
+            if($(this).val()==this.defaultValue){
+                $(this).val('');
+            }
+        });
+
+        $('.inputTop').blur(function(){
+            if($(this).val()==''){
+                $(this).val(this.defaultValue);
+            }
+        });
+
+    })
+</script>
+<!--top_end-->
+<!--load_start-->
+<div class="boxMain">
+    <!--banner_start-->
+    <div class="banner boxShadow">
+        <div id="bannerPic" style="visibility: hidden;">
+            <ul class="pic">
+                <li><img src="images/banner/20170508024439.jpg" /></li>
+                <li><img src="images/banner/20170503103958.jpg" /></li>
+                <li><img src="images/banner/20170412091128.jpg" /></li>
+                <li><img src="images/banner/20170411093701.jpg" /></li>
+                <li><img src="images/banner/20170407090607.jpg" /></li>
+                <li><img src="images/banner/20170321021701.jpg" /></li>
+                <li><img src="images/banner/20170116033932.jpg" /></li>
+                <li><img src="images/banner/20161229015233.jpg" /></li>
+                <li><img src="images/banner/20170303045656.jpg" /></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('#bannerPic').myFocus({
+                pattern: 'mF_tbhuabao', //风格应用的名称
+                time: 2, //切换时间间隔(秒)
+                trigger: 'click', //触发切换模式:'click'(点击)/'mouseover'(悬停)
+                width: 820, //设置图片区域宽度(像素)
+                height: 350, //设置图片区域高度(像素)
+                txtHeight: 0//文字层高度设置(像素),'default'为默认高度，0为隐藏
+            });
+            /*
+             $(".banner").mouseenter(function () {
+             $('.mF_tbhuabao .prev,.mF_tbhuabao .next').css('display', 'block');
+             $('#subNav').hide();
+             });
+             $(".banner").mouseleave(function () {
+             $('.mF_tbhuabao .prev,.mF_tbhuabao .next').css('display', 'none');
+             });
+             */
+        });
+    </script>
+    <!--banner end-->
+    <!--notice start-->
+    <div class="indNotice boxShadow">
+        <div class="indGp">
+            <div class="gpUp">
+                <h1 id="gpJg"></h1>
+                <i id="gpQs"></i>
+                <h2>RMB</h2>
+            </div>
+            <span id="gpTime"></span>
+        </div>
+        <div class="indNavNotice">
+            <i>最新公告</i>
+            <a href="inv_list.aspx?ctlgid=348251" class="btnMore">更多</a>
+        </div>
+        <div class="indNoticeList">
+            <ul>
+                <li>
+                    <i>05-18</i>
+                    <span>
+                        <a target="_blank"  href="show.aspx?cid=348251&id=6260" target="_blank">泰禾集团：国信证券股份有限公司关于公司非公开发行的保荐总结报告书</a>
+                    </span>
+                </li>
+                <li>
+                    <i>05-18</i>
+                    <span>
+                        <a target="_blank"  href="show.aspx?cid=348251&id=6259" target="_blank">泰禾集团：国信证券股份有限公司关于公司非公开发行股票2016年度保荐工作报告</a>
+                    </span>
+                </li>
+                <li>
+                    <i>05-18</i>
+                    <span>
+                        <a target="_blank"  href="show.aspx?cid=348251&id=6258" target="_blank">2017-83 泰禾集团：关于参与设立浙江浙商产融股权投资基金合伙企业的进展公告</a>
+                    </span>
+                </li>
+                <li>
+                    <i>05-16</i>
+                    <span>
+                        <a target="_blank"  href="show.aspx?cid=348251&id=6257" target="_blank">泰禾集团：2016年年度股东大会的法律意见书</a>
+                    </span>
+                </li>
+                <li>
+                    <i>05-16</i>
+                    <span>
+                        <a target="_blank"  href="show.aspx?cid=348251&id=6256" target="_blank">2017-82 泰禾集团：2016年年度股东大会决议公告</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://hq.sinajs.cn/list=sz000732,s_sz000732"></script>
+    <!-- 为了提供两个变量 hq_str_sz000732 和 hq_str_s_sz000732 -->
+    <script type="text/javascript">
+        $(function () {
+            var arr_stock = hq_str_sz000732.split(',');
+            var arr_stock_s = hq_str_s_sz000732.split(',');
+            $('#gpJg').text(arr_stock_s[1]);
+            if (arr_stock_s[2].indexOf("-") >= 0) {//表示下跌
+                if ($('.indGp div').hasClass('gpUp')) {
+                    $('.indGp div').removeClass('gpUp').addClass('gpDown');
+                }
+            }
+            var lastTime = '截至 ' + arr_stock[30] + " " + arr_stock[31] + '';
+            $("#gpTime").html(lastTime);
+        })
+    </script>
+    <script type="text/javascript">
+        $('.indNoticeList').kxbdSuperMarquee({
+            distance: 60,
+            time: 3,
+            direction: 'up'
+        });
+    </script>
+    <!--notice end-->
+    <!--news start-->
+    <div class="indNews bosShadow">
+        <div class="indNav">
+            <i>新闻中心</i>
+        </div>
+        <div class="indNewsList">
+            <a target="_blank" href="show.aspx?ctlgid=473722&Id=6261">
+                <div>
+                    <img src="images/news/20170518112548.jpg" />
+                </div>
+                <span>
+                    <h1>泰禾捐资2亿，同济医学教育获其史上最大单笔现金捐赠</h1>
+                    <h2>发布：2017-05-18 |  浏览：255</h2>
+                    <h3>5月18日，泰禾宣布向同济大学捐资2亿元，设立“同济大学泰禾医学发展基金”。捐赠仪式于当天在同济大学举行，上海市市台办副主任王立新、市台办交流处处长王躍、&nbsp;&nbsp;......</h3>
+                </span>
+            </a>
+            <a target="_blank" href="show.aspx?ctlgid=473722&Id=6265">
+                <div>
+                    <img src="images/news/20170518112459.jpg" />
+                </div>
+                <span>
+                    <h1>中国指数研究院研析：不忘初心砥砺前行，泰禾多元开花促发展</h1>
+                    <h2>发布：2017-05-18 |  浏览：44</h2>
+                    <h3>来源：中国指数研究院日期：2017年5月17日2016年，面对复杂的行业和宏观经济形势，泰禾集团坚持贯彻“扎根福建本土，深耕一线城市”的前瞻性战略布局，准确理解&nbsp;&nbsp;......</h3>
+                </span>
+            </a>
+            <a target="_blank" href="show.aspx?ctlgid=527344&Id=6264">
+                <div>
+                    <img src="images/news/20170518112147.jpg" />
+                </div>
+                <span>
+                    <h1>全周期服务体系启动，你在院子里的吃饭看病观影泰禾全包了</h1>
+                    <h2>发布：2017-05-18 |  浏览：31</h2>
+                    <h3>来源：网易房产时间：2017年5月17日近年来，泰禾在医疗健康板块的布局可谓喜讯频传，引起了外界的广泛关注。5月16日“泰禾院子系全周期服务体系”正式启动，泰禾&nbsp;&nbsp;......</h3>
+                </span>
+            </a>
+            <a target="_blank" href="show.aspx?ctlgid=527344&Id=6263">
+                <div>
+                    <img src="images/news/20170518111936.png" />
+                </div>
+                <span>
+                    <h1>依托“大中关”，泰禾·昌平拾景园区域价值凸显</h1>
+                    <h2>发布：2017-05-18 |  浏览：30</h2>
+                    <h3>来源：今日头条时间：2017年5月11日随着高科技企业及其配套服务产业链条的迅速发展，被誉为“中国硅谷”的中关村呈现出重心北移的态势，地跨海淀、昌平两区的大&nbsp;&nbsp;......</h3>
+                </span>
+            </a>
+            <a target="_blank" href="show.aspx?ctlgid=538136&Id=6262">
+                <div>
+                    <img src="images/news/20170518111444.jpg">
+                </div>
+                <span>
+                    <h1>星级酒店扎堆，这个商业体要拉高一座城市的逼格</h1>
+                    <h2>发布：2017-05-18 |  浏览：29</h2>
+                    <h3>每一个堪称大都会的城市，都必然会诞生一个国际酒店集群。例如纽约的曼哈顿，10家五星级酒店，为这个繁华之地加持；又如伦敦的金融城，金融中心与星级酒店在这里&nbsp;&nbsp;......</h3>
+                </span>
+            </a>
+            <a target="_blank" href="show.aspx?ctlgid=473722&Id=6253">
+                <div>
+                    <img src="images/news/20170517090818.png" />
+                </div>
+                <span>
+                    <h1>福建日报：黄其森的三个感恩与一座现代化书院</h1>
+                    <h2>发布：2017-05-17 |  浏览：193</h2>
+                    <h3>来源：《福建日报》第3版记者：邱书剑时间：2017年5月16日5月14日，福州一中迎来200周年校庆。当天上午，泰禾集团与福州一中教育发展基金会签署协议，泰禾集团出&nbsp;&nbsp;......</h3>
+                </span>
+            </a>
+            <a target="_blank" href="show.aspx?ctlgid=473722&Id=6252">
+                <div>
+                    <img src="images/news/20170517090140.jpg" />
+                </div>
+                <span>
+                    <h1>闽商聚力建设海上福州 ,第四届鼓岭论坛在泰禾凯宾斯基酒店举行</h1>
+                    <h2>发布：2017-05-17 |  浏览：125</h2>
+                    <h3>5月16日，“闽商聚力建设海上福州——第四届鼓岭论坛”在福州泰禾凯宾斯基酒店盛大举行。在泰禾集团的鼎力支持下，来自全国各地300多名优秀闽籍商会代表齐聚一堂&nbsp;&nbsp;......</h3>
+                </span>
+            </a>
+        </div>
+        <a href="news.aspx" target="_blank" class="btnMore1">——  更多新闻动态  ——</a>
+    </div>
+    <!--news end-->
+    <div style="float:left; width: 360px;">
+        <!-- pro start -->
+        <div class="indPro boxShadow">
+            <div class="indNav">
+                <i>经典楼盘</i>
+                <a href="thdc.html" class="btnMore2">更多</a>
+            </div>
+            <div class="indProList">
+                <a href="proshow.aspx?id=71" target="_blank">
+                    <h2><img src="images/pro/20140522043118_1.jpg" /></h2>
+                    <div><img src="images/pro/img20170110020746.jpg" /></div>
+                    <h1>泰禾中国院子</h1>
+                </a>
+                <a href="proshow.aspx?id=78" target="_blank">
+                    <h2><img src="images/pro/20160823034732_1.png" /></h2>
+                    <div><img src="images/pro/20160823034245.jpg" /></div>
+                    <h1>泰禾西府大院</h1>
+                </a>
+                <a href="proshow.aspx?id=81" target="_blank">
+                    <h2><img src="images/pro/20130830095957_1.jpg" /></h2>
+                    <div><img src="images/pro/20140703034716.jpg" /></div>
+                    <h1>福州东二环泰禾广场</h1>
+                </a>
+            </div>
+        </div>
+        <!--pro_end-->
+        <!--book_start-->
+        <div class="indBook bosShadow">
+            <div class="indNavBook">
+                <i>泰客会</i>
+                <a href="tkh.aspx" class="btnMore2" style="top: 14px;">更多</a>
+            </div>
+            <div class="indBookList">
+                <a href="javascript:void(0)" class="goLBook" id="goL1"></a>
+                <a href="javascript:void(0)" class="goRBook" id="goR1"></a>
+                <div class="indBookList1">
+                    <ul>
+                        <li>
+                            <a href="/tBook/Magazine.aspx?mCode=20170504023036" target="_blank">
+                                <span></span>
+                                <img src="images/book/20170504023036.jpg" />
+                                <i>2017泰客会89期</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/tBook/Magazine.aspx?mCode=20170328025719" target="_blank">
+                                <span></span>
+                                <img  src="images/book/20170328025719.jpg" />
+                                <i>2017.泰客会88期</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/tBook/Magazine.aspx?mCode=20170301051900" target="_blank">
+                                <span></span>
+                                <img  src="images/book/20170301051900.jpg" />
+                                <i>2017.泰客会87期</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('.indBookList1').kxbdSuperMarquee({
+                distance: 182,
+                isAuto: false,
+                btnGo: { left: '#goR1', right: '#goL1' },
+                direction: 'left'
+            });
+        </script>
+        <!-- book end -->
+    </div>
+</div>
+
+
+<!-- foot start -->
+<div class="boxFoot">
+    <div class="boxFoot1">
+        <div class="boxGz">
+            <i>关注我们：</i>
+            <a href="javascript:void(0)" class="icoWx">微信</a>
+            <a href="javascript:void(0)" class="icoWb">微博</a>
+            <a href="javascript:void(0)" class="icoFx">分享</a>
+        </div>
+        <img src="images/foot/imgEwmWx.jpg" class="imgEwmWx" />
+        <img src="images/foot/imgEwmWb.jpg" class="imgEwmWb" />
+        <div class="bshare-custom" style="position:absolute; top:22px; right:0; display:none; font-size:0">
+            <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+            <a title="分享到腾讯微博" class="bshare-qqmb"></a>
+            <a title="分享到QQ空间" class="bshare-qzone"></a>
+            <a title="分享到人人网" class="bshare-renren"></a>
+            <a title="分享到网易微博" class="bshare-neteasemb"></a>
+            <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+            <!--<span class="BSHARE_COUNT bshare-share-count">0</span>-->
+        </div>
+        <!--
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+        -->
+        <div class="footLink">
+            <a href="inv_list.aspx?ctlgid=348251">信息披露</a>
+            <!--<a href="lzjb.aspx">廉政举报</a>-->
+            <a href="law.aspx">法律声明</a>
+            <a href="map.aspx">网站地图</a>
+            <a href="contact.aspx" style="border:none">联系我们</a>
+        </div>
+        <div class="footText">
+            版权所有 泰禾集团 Copyright &copy; 2017 Tahoe Group All Right Reserved.
+            <br>
+            闽ICP备05005533号
+            <a target="_blank" href="http://www.fjhxtc.com">网站支持：海西天成</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.icoWx').mouseenter(function () {
+        $('.imgEwmWx').show();
+        $('.bshare-custom').hide();
+    });
+    $('.icoWx').mouseleave(function () {
+        $('.imgEwmWx').hide();
+    });
+    $('.icoWb').mouseenter(function () {
+        $('.bshare-custom').hide();
+        $('.imgEwmWb').show();
+    });
+    $('.icoWb').mouseleave(function () {
+        $('.imgEwmWb').hide();
+    });
+    $('.icoFx').mouseenter(function () {
+        $('.bshare-custom').show();
+    });
+    $('.bshare-custom').mouseleave(function () {
+        $(this).hide();
+    });
+    $('.boxFoot1').mouseleave(function () {
+        $('.bshare-custom').hide();
+    });
+    $('.dcNav a:last').css('margin-right', '0');
+
+    $('.newsListText a').each(function (i) {
+        var index = $(this).index();
+        index = index + 1;
+        if (index % 5 == 0) {
+            $(this).addClass('line');
+        };
+    });
+</script>
+<div style="display:none">
+    <script src="http://s13.cnzz.com/stat.php?id=4867481&web_id=4867481" language="JavaScript"></script>
+    <script src="http://s4.cnzz.com/stat.php?id=1261404489&web_id=1261404489" language="JavaScript"></script>
+    <script language="javascript"  src="js/counter.html"></script>
+</div>
+</body>
+</html>
