@@ -1,0 +1,828 @@
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+body {
+    background: #f0f0f0 url("../images/body/bgTop.png") repeat-x scroll center top;
+    color: #444;
+    /*
+    font-family: "Microsoft Yahei","微软雅黑";
+     */
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #444;
+    text-decoration: none;
+}
+img, input, button, select, textarea {
+    border: medium none;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+    resize: none;
+    vertical-align: middle;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-end: 1em;
+    margin-block-start: 1em;
+    padding-inline-start: 40px;
+}
+ol, ul, li {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+/* .boxTop */
+.boxTop {
+    height: 110px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 1200px;
+    z-index: 100;
+}
+.logo {
+    left: 50%;
+    margin-left: -600px;
+    position: absolute;
+    top: 28px;
+}
+.btnSearch {
+    background: rgba(0, 0, 0, 0) url("../images/top/btnSearch.png") no-repeat scroll 0 0;
+    height: 26px;
+    position: absolute;
+    right: 15px;
+    top: 50px;
+    width: 26px;
+}
+.nav {
+    display: inline-block;
+    float: right;
+    height: 100px;
+    margin: 27px 50px 0 0;
+    position: relative;
+    z-index: 99;
+}
+.nav li {
+    float: left;
+    padding: 0 17px;
+}
+.nav a {
+    border-bottom: 4px solid #fff;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 69px;
+}
+.cur a {
+    border-bottom: 4px solid #dd1721 !important;
+    color: #dd1721;
+    font-weight: bold;
+}
+.navBlod a {
+    color: #dd1721 !important;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .boxTop1 */
+.boxTop1 {
+    background: #fff none repeat scroll 0 0;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+/* .searchTop */
+.searchTop {
+    background: #666 none repeat scroll 0 0;
+    display: none;
+    left: 50%;
+    margin-left: 240px;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    z-index: 200;
+}
+.inputTop {
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+    height: 34px;
+    line-height: 34px;
+    text-indent: 5px;
+    width: 280px;
+}
+.submitTop {
+    background: #dd1721 none repeat scroll 0 0;
+    border: 0 none;
+    color: #fff;
+    font-size: 14px;
+    height: 34px;
+    line-height: 30px;
+    width: 60px;
+}
+
+
+/* .subNav */
+.subNav {
+    animation: 0.5s ease 0s normal none 1 running AsubNav;
+    background: #666 none repeat scroll 0 0;
+    display: none;
+    font-size: 0;
+    line-height: 54px;
+    z-index: 98;
+}
+.subNav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+.subNav:nth-child(5){
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -164px;
+    width: 120px;
+}
+.subNav:nth-child(6){
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -62px;;
+    width: 120px;
+}
+.subNav:nth-child(7){
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: 42px;
+    width: 120px;
+}
+.subNav:nth-child(9){
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: 244px;
+    width: 120px;
+}
+.subNav:nth-child(10){
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: 363px;;
+    width: 120px;
+}
+
+
+
+
+
+/* .boxMain */
+.boxMain {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1220px;
+}
+/* .banner */
+.boxShadow {
+    box-shadow: 0 0 10px #e2e2e2;
+}
+.banner {
+    display: inline-block;
+    float: left;
+    height: 350px;
+    margin: 20px 20px 0 10px;
+    overflow: hidden;
+    position: relative;
+    width: 820px;
+}
+.mF_tbhuabao-bannerPic {
+    background: #fff none repeat scroll 0 0;
+    font: 12px/1.5 Verdana;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    visibility: visible !important;
+    width: 820px;
+}
+.mF_tbhuabao-bannerPic * {
+    border: 0 none;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.mF_tbhuabao-bannerPic .pic {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    width: 820px;
+}
+.mF_tbhuabao .pic, .mF_tbhuabao .win {
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+.banner img {
+    height: 350px;
+    width: 820px;
+}
+.mF_tbhuabao .dot {
+    bottom: 10px;
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    z-index: 100;
+}
+.mF_tbhuabao .dot li {
+    display: inline;
+}
+.mF_tbhuabao .dot li a {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 0;
+    height: 10px;
+    line-height: 0;
+    margin: 0 3px;
+    opacity: 0.6;
+    width: 10px;
+}
+.mF_tbhuabao .dot li.current a {
+    background: #e22626 none repeat scroll 0 0;
+    opacity: 1;
+}
+.mF_tbhuabao-bannerPic .txt li, .mF_tbhuabao-bannerPic .txt li span, .mF_tbhuabao-bannerPic .txt-bg {
+    height: 0 !important;
+    line-height: 0 !important;
+    overflow: hidden;
+    width: 820px;
+}
+.mF_tbhuabao .txt li {
+    display: none;
+    height: 38px;
+    line-height: 38px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.mF_tbhuabao .txt li span {
+    background: #000 none repeat scroll 0 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+}
+.mF_tbhuabao .prev, .mF_tbhuabao .next {
+    cursor: pointer;
+    height: 43px;
+    position: absolute;
+    width: 43px;
+    z-index: 4;
+}
+.mF_tbhuabao .prev {
+    animation: 0.5s ease 0s normal none 1 running ABtnJtLeft;
+    left: 10px;
+}
+.mF_tbhuabao .prev a {
+    background: rgba(0, 0, 0, 0) url("../images/banner/btnLeft.png") no-repeat scroll center center;
+    display: block;
+    height: 43px;
+    width: 43px;
+}
+.mF_tbhuabao .next {
+    animation: 0.5s ease 0s normal none 1 running ABtnJtRight;
+    right: 10px;
+}
+.mF_tbhuabao .next a {
+    background: rgba(0, 0, 0, 0) url("../images/banner/btnRight.png") no-repeat scroll center center;
+    display: block;
+    height: 43px;
+    width: 43px;
+}
+
+
+/* indNotice */
+
+.indNotice {
+    background: #015a9c none repeat scroll 0 0;
+    float: left;
+    height: 350px;
+    margin: 20px 0 0;
+    overflow: hidden;
+    width: 360px;
+}
+.indGp {
+    background: rgba(0, 0, 0, 0) url("../images/notice/bgGp.png") no-repeat scroll 0 0;
+    height: 110px;
+    padding: 31px 20px 0 130px;
+    text-align: center;
+    width: 210px;
+}
+.gpUp {
+    color: #e40808;
+}
+.indGp div {
+    font-family: customFont;
+    font-size: 0;
+}
+.indGp h1 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+.indGp i {
+    display: inline-block;
+    height: 40px;
+    width: 30px;
+}
+.gpUp i {
+    background: rgba(0, 0, 0, 0) url("../images/notice/icoGpUp.png") no-repeat scroll center bottom;
+}
+
+.gpDown i {
+    background: rgba(0, 0, 0, 0) url("../images/notice/icoGpDown.png") no-repeat scroll center bottom;
+}
+.indGp h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: normal;
+}
+.indGp span {
+    color: #999;
+    display: block;
+    font-size: 12px;
+}
+
+.indNavNotice {
+    background: rgba(0, 0, 0, 0) url("../images/notice/bgNavNotice.jpg") repeat-x scroll center bottom;
+    font-size: 0;
+    height: 42px;
+    margin: 0 20px;
+    overflow: hidden;
+    position: relative;
+}
+.indNavNotice i {
+    border-bottom: 4px solid #0797e9;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 108px;
+}
+.btnMore {
+    background: rgba(0, 0, 0, 0) url("../images/notice/icoMore1.png") no-repeat scroll right center;
+    color: #a4b9d1;
+    display: block;
+    font-size: 12px;
+    line-height: 42px;
+    padding-right: 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.indNoticeList {
+    background: rgba(0, 0, 0, 0) url("../images/notice/bgNoticeLine.png") no-repeat scroll left bottom;
+    height: 120px;
+    margin: 20px 20px 0;
+    overflow: hidden;
+    width: 320px;
+}
+.indNoticeList li {
+    color: #fff;
+    font-size: 13px;
+    height: 60px;
+    line-height: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+.indNoticeList i {
+    background: rgba(0, 0, 0, 0) url("../images/notice/icoNotice.png") no-repeat scroll right center;
+    display: inline-block;
+    float: left;
+    margin-right: 11px;
+    width: 59px;
+}
+.indNoticeList span {
+    display: inline-block;
+    float: left;
+    width: 250px;
+}
+.indNoticeList a {
+    color: #fff;
+}
+
+
+/* .indNews */
+
+.indNews {
+    background: #fff none repeat scroll 0 0;
+    display: inline-block;
+    float: left;
+    margin: 20px 20px 0 10px;
+    overflow: hidden;
+    width: 820px;
+}
+.indNav {
+    background: rgba(0, 0, 0, 0) url("../images/news/bgNavInd.png") repeat-x scroll center bottom;
+    font-size: 0;
+    height: 70px;
+    margin: 0 20px;
+    overflow: hidden;
+    position: relative;
+}
+.indNav i {
+    border-bottom: 4px solid #dd1721;
+    display: inline-block;
+    font-size: 26px;
+    height: 66px;
+    line-height: 80px;
+    text-align: center;
+    width: 108px;
+}
+.indNewsList a {
+    border-bottom: 1px solid #dadada;
+    display: block;
+    overflow: hidden;
+    padding: 25px 0;
+    transition: background 0.5s ease 0s;
+    width: 100%;
+}
+.indNewsList a div {
+    display: inline-block;
+    float: left;
+    margin: 0 20px 0 25px;
+    overflow: hidden;
+    width: 200px;
+}
+.indNewsList a div img {
+    height: auto;
+    transition: transform 1s ease 0s;
+    width: 200px;
+}
+.indNewsList a span {
+    display: inline-block;
+    float: left;
+    line-height: 26px;
+    padding: 10px 0 0;
+    width: 550px;
+}
+.indNewsList a span h1 {
+    font-size: 21px;
+}
+.indNewsList a span h2 {
+    color: #b7b7b7;
+    font-size: 12px;
+    font-weight: normal;
+}
+.indNewsList a span h3 {
+    color: #888;
+    font-size: 14px;
+    font-weight: normal;
+}
+.btnMore1 {
+    color: #999;
+    display: block;
+    font-size: 14px;
+    line-height: 80px;
+    text-align: center;
+}
+
+
+
+/* pro */
+.indPro {
+    background: #fff none repeat scroll 0 0;
+    margin: 20px 0 0;
+    overflow: hidden;
+    width: 360px;
+}
+.btnMore2 {
+    background: rgba(0, 0, 0, 0) url("../images/pro/icoMore2.png") no-repeat scroll right center;
+    color: #999;
+    display: block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding-right: 18px;
+    position: absolute;
+    right: 0;
+    top: 35px;
+}
+.indProList a {
+    background: #e8e8e8 none repeat scroll 0 0;
+    display: block;
+    margin-top: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: background 0.5s ease 0s;
+    width: 100%;
+}
+.indProList a h2 {
+    border-radius: 50%;
+    bottom: 45px;
+    height: 60px;
+    left: 50%;
+    margin-left: -30px;
+    overflow: hidden;
+    position: absolute;
+    width: 60px;
+    z-index: 2;
+}
+.indProList a h2 img {
+    height: 60px;
+}
+.indProList a div img {
+    height: 220px;
+    transition: transform 1s ease 0s;
+    width: 320px;
+}
+.indProList a h1 {
+    font-size: 16px;
+    font-weight: normal;
+    height: 75px;
+    line-height: 100px;
+    overflow: hidden;
+    text-align: center;
+}
+.indProList a div {
+    background: #000 none repeat scroll 0 0;
+    overflow: hidden;
+    width: 320px;
+}
+.indProList a div img {
+    height: 220px;
+    transition: transform 1s ease 0s;
+    width: 320px;
+}
+
+
+/* book */
+
+.indBook {
+    background: #fff none repeat scroll 0 0;
+    height: 375px;
+    margin: 20px 0 0;
+}
+.indNavBook {
+    font-size: 0;
+    height: 34px;
+    margin: 0 20px;
+    overflow: hidden;
+    position: relative;
+}
+.indNavBook i {
+    background: #dd1721 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    width: 82px;
+}
+.indBookList {
+    margin: 20px 0 0;
+    position: relative;
+    width: 360px;
+}
+.goLBook {
+    background: rgba(0, 0, 0, 0) url("../images/book/btnBookL.png") no-repeat scroll 0 0;
+    display: block;
+    height: 44px;
+    left: 40px;
+    position: absolute;
+    top: 100px;
+    width: 17px;
+    z-index: 100;
+}
+.goRBook {
+    background: rgba(0, 0, 0, 0) url("../images/book/btnBookR.png") no-repeat scroll 0 0;
+    display: block;
+    height: 44px;
+    position: absolute;
+    right: 40px;
+    top: 100px;
+    width: 17px;
+    z-index: 100;
+}
+.indBookList1 {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 182px;
+}
+.indBookList1 li {
+    background: rgba(0, 0, 0, 0) url("../images/book/bgBook.jpg") no-repeat scroll center top;
+    float: left;
+    height: 290px;
+    position: relative;
+    width: 182px;
+}
+.indBookList1 li span {
+    background: rgba(0, 0, 0, 0) url("../images/book/bgBook.png") repeat-y scroll left center;
+    height: 244px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 176px;
+}
+.indBookList1 li img {
+    height: 244px;
+    width: 176px;
+}
+.indBookList1 li i {
+    display: block;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+
+/* foot */
+.boxFoot {
+    color: #777;
+    height: 230px;
+    width: 100%;
+}
+.boxFoot1 {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+}
+.boxGz {
+    font-size: 0;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+.boxGz i {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-right: 5px;
+}
+.boxGz a {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 30px;
+    padding: 0 20px 0 35px;
+}
+.boxFoot a {
+    color: #777;
+}
+.icoWx {
+    background: rgba(0, 0, 0, 0) url("../images/foot/icoWxHover.png") no-repeat scroll left center;
+}
+.icoWb {
+    background: rgba(0, 0, 0, 0) url("../images/foot/icoWbHover.png") no-repeat scroll left center;
+}
+.icoFx {
+    background: rgba(0, 0, 0, 0) url("../images/foot/icoFxHover.png") no-repeat scroll left center;
+}
+
+.imgEwmWx {
+    background: rgba(0, 0, 0, 0) url("../images/foot/bgEwmWx.png") no-repeat scroll 0 0;
+    box-sizing: content-box;
+    display: none;
+    height: 100px;
+    padding: 17px 17px 26px;
+    position: absolute;
+    right: 150px;
+    top: -90px;
+    width: 100px;
+    z-index: 100;
+}
+.imgEwmWb {
+    background: rgba(0, 0, 0, 0) url("../images/foot/bgEwmWx.png") no-repeat scroll 0 0;
+    box-sizing: content-box;
+    display: none;
+    height: 100px;
+    padding: 17px 17px 26px;
+    position: absolute;
+    right: 70px;
+    top: -90px;
+    width: 100px;
+    z-index: 100;
+}
+.bshare-custom {
+    font-size: 13px;
+    line-height: 16px !important;
+}
+a.bshareDiv .bsPromo, div.bshare-custom .bsPromo {
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+div.bshare-custom .bsPromo.bsPromo2 {
+    background: rgba(0, 0, 0, 0) url("http://static.bshare.cn/frame/images/bshare_promo_sprite.gif") no-repeat scroll 0 0;
+    cursor: pointer;
+}
+.bshare-custom a {
+    color: #333;
+    cursor: pointer;
+    display: none;
+    height: 16px;
+    margin-right: 3px;
+    opacity: 1;
+    padding-left: 19px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.bshare-custom .bshare-sinaminiblog {
+    background: rgba(0, 0, 0, 0) url("http://static.bshare.cn/frame/images/logos/s4/sprite/top_logos_sprite.png") no-repeat scroll 0 -270px;
+    display: inline-block;
+}
+.bshare-custom .bshare-qqmb {
+    background: rgba(0, 0, 0, 0) url("http://static.bshare.cn/frame/images/logos/s4/sprite/top_logos_sprite.png") no-repeat scroll 0 -198px;
+    display: inline-block;
+}
+.bshare-custom .bshare-qzone {
+    background: rgba(0, 0, 0, 0) url("http://static.bshare.cn/frame/images/logos/s4/sprite/top_logos_sprite.png") no-repeat scroll 0 -234px;
+    display: inline-block;
+}
+.bshare-custom .bshare-renren {
+    background: rgba(0, 0, 0, 0) url("http://static.bshare.cn/frame/images/logos/s4/sprite/top_logos_sprite.png") no-repeat scroll 0 -252px;
+    display: inline-block;
+}
+.bshare-custom .bshare-neteasemb {
+    background: rgba(0, 0, 0, 0) url("http://static.bshare.cn/frame/images/logos/s4/sprite/top_logos_sprite.png") no-repeat scroll 0 -162px;
+    display: inline-block;
+}
+.bshare-custom .bshare-more {
+    color: #333 !important;
+    display: inline-block;
+    padding-left: 0 !important;
+}
+.bshare-custom .bshare-more.more-style-addthis {
+    background: rgba(0, 0, 0, 0) url("http://static.bshare.cn/frame/images/logos/s4/more-style-addthis.png") no-repeat scroll 0 0;
+}
+
+
+
+/* footlink */
+
+.footLink {
+    border-bottom: 2px solid #c0c0c0;
+    display: inline-block;
+    font-size: 0;
+    margin: 35px 0 7px;
+    padding-bottom: 20px;
+}
+.footLink a {
+    border-right: 2px solid #adaeae;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 14px;
+    margin-right: 8px;
+    padding: 0 8px 0 0;
+}
+
+
+/* foottext */
+.footText {
+    line-height: 26px;
+}
